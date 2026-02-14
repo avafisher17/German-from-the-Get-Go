@@ -1,0 +1,171 @@
+#about {
+    margin: 5% auto;
+}
+
+#about, #about_text, #about_img, #about2, #about2_text, #about2_img, #about3, #about3_text, #about3_img {
+    display: flex;
+    width: 100%;
+}
+
+#about2, #about3 {
+    margin: 10% auto;
+}
+
+#about_img {
+    height: 300px;
+}
+
+#about_img, #about2_img, #about3_img {
+    justify-content: center;
+    align-items: center;
+}
+
+#about_img, #about3_img { 
+    margin: auto 10% auto 5%;
+}
+    
+#about2_img {
+    margin: auto 5% auto 10%;
+}
+
+#about_text, #about3_text {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#about2_text {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10%;
+}
+
+#banner {
+    display: flex;
+    margin-left: 6%;
+}
+
+#banner img {
+    width: 980px;
+    height: 550px;
+}
+
+#banner_text {
+    margin-top: 5%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    gap: 1rem;
+}
+
+#banner_text h2 {
+    line-height: 1em;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#landing {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, white 0%, rgb(169, 243, 207) 70%, white 77%);
+}
+
+#start-button a {
+    display: block;
+    padding: 20px 75px;
+    font-size: 2em;
+    margin-right: 5%;
+}
+
+#start-button div {
+    margin: auto 10% 5% 10%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button h2 {
+    text-align: center;
+    color: orange;
+}
+
+/* -- Mobile Formatting -- */
+
+@media (max-width: 768px) {
+
+    #about, #about2, #about3, #start-button {
+        margin-top: 200px;
+    }
+
+    #about_img {
+        align-items: center;
+    }
+
+    #about_img img {
+        width: auto;
+        max-width: 100%;
+        max-height: 350px;
+    }
+
+    #about_text, #about2_text, #about3_text {
+        width: 100%;
+        max-width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #about_text h2, #about2_text h2, #about3_text h2, #start-button h2 {
+        margin: 5% 0%;
+    }
+
+    #about_text {
+        margin-bottom: 1em;
+    }
+
+    #about3_img img {
+        width: auto;
+        max-width: 100%;
+        max-height: 250px;
+    }
+
+    #banner {
+        text-align: center;
+        margin: 0em;
+    }
+
+    #banner, #about, #about2, #about3, #start-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0em;
+    }
+
+    #banner img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #banner_text {
+        gap: 0em;
+        margin: 0em 1em;
+    }
+
+    #landing {
+        min-height: 100dvh;
+    }
+
+    #start-button div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+}

@@ -1,0 +1,128 @@
+button {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(0, 191, 99);
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(169, 243, 207);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+table {
+    margin: 3% auto;
+}
+
+td {
+    padding: 5px;
+    font-family: "Alan Sans", sans-serif;
+    font-size: 1.5em;
+    color:rgb(0, 191, 99);
+}
+
+/* --- Classes --- */
+.correct {
+    color: white;
+    background-color: rgb(253, 194, 0);
+    border-color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.incorrect {
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
+/* --- IDs --- */
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: auto 7% 3% 7%;
+}
+
+#after-game-buttons {
+    margin: 3% auto;
+}
+
+#back-button, #next-button, #next-q {
+    color: rgb(0, 191, 99);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgb(193, 255, 114);
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 191, 99);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#subpage-1, #subpage-2 {
+    display: flex;
+    align-items: center;
+}
+
+#subpage-1, #subpage-2, #subpage-3, #subpage-4, #subpage-5 {
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(144, 144, 144);
+    padding: 20px;
+    margin: 5%;
+    text-align: center;
+    background: linear-gradient(to right, white 0%, rgb(240, 246, 243) 100%);
+}
+
+#subpage-3, #subpage-4, #subpage-5 {
+    display: block;
+}
+
+#game-info {
+    margin: auto auto 3% auto;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-buttons {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+#score {
+    color: rgb(253, 194, 0);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(253, 194, 0);
+    padding: 20px 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#svg {
+    display: block;
+    margin-bottom: 0;
+}
+
+#vocab-pic {
+    margin-top: 3%;
+}
+
+#voiced-words {
+    color: rgb(0, 191, 99)
+}

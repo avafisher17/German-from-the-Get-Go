@@ -1,0 +1,248 @@
+a, button, h1, h2, h3 {
+    font-family: "Alan Sans", sans-serif;
+}
+
+a:link, a:hover, a:active {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, white 0%, rgb(169, 243, 207) 100%);
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(187, 187, 187);
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(0, 191, 99);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    color: black;
+}
+
+footer {
+    background-color: rgb(0, 191, 99);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 2.5em;
+    font-family: "Inter", sans-serif;
+    margin-top: 5%;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    height: 50px;
+    border-bottom: 2px solid rgb(210, 210, 210);
+    background: linear-gradient(to right, white 0%, rgb(240, 246, 243) 100%);
+}
+
+nav a:link {
+    color: rgb(187, 187, 187);
+}
+
+nav a:visited {
+    text-decoration: underline;
+    color: rgb(144, 144, 144);
+}
+
+nav a:hover {
+    color: rgb(0, 191, 99);
+}
+
+nav a:active {
+    color: rgb(169, 243, 207);
+}
+
+nav img {
+    display: block;
+    margin-left: 5%;
+    height: 50px;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+/* --- Classes --- */
+.alan-sans {
+    font-family: "Alan Sans", sans-serif;
+}
+
+.darkgreen {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 25px;
+    background-color: rgb(0, 191, 99);
+    border-radius: 12px;
+}
+
+.footer-link {
+  color: inherit;
+}
+
+.green {
+    color: rgb(0, 191, 99)
+}
+
+.img-center {
+    display: flex;
+    margin: auto;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
+.lightgreen {
+    color: rgb(0, 191, 99);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgb(193, 255, 114);
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 191, 99);
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    font-variant: small-caps;
+}
+
+.nav-show {
+  transform: translateY(0);
+}
+
+.orange {
+    color: rgb(249, 202, 120);
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: rgb(210, 210, 210);
+    background: linear-gradient(to right, white 0%, rgb(240, 246, 243) 100%); 
+}
+
+.unit-banner {
+    display: flex;
+    margin-left: 6%;
+}
+
+.unit-banner-text {
+    margin-top: 5%;
+    margin-right: 6%;
+    flex-direction: column;
+    text-align: center;   
+}
+
+/* --- IDs --- */
+#construction img {
+    height: 400px;
+}
+
+#logo {
+    display: block;
+    margin: 50px auto auto auto;
+}
+
+/* -- Mobile Formatting -- */
+
+@media (max-width: 768px) {
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 1% 2%;
+        line-height: 1em;
+    }
+
+    h2 {
+        margin: auto 2%;
+    }
+
+    #construction {
+        margin-top: 5%;
+        width: 100dvw;
+        max-width: 85%;
+        height: 25%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    nav img {
+        height: 90%;
+        max-height: 40px;
+        min-height: 25px;
+    }
+    
+    nav ul {
+        margin-right: 2%;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+}

@@ -1,0 +1,90 @@
+/* --- Classes --- */
+.avatar-select label{
+    display: inline;
+}
+
+.lesson-button {
+    display: flex;
+    border-radius: 12px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(210, 210, 210);
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    padding: 10px 20px;
+    
+}
+
+.lesson-heading, .lesson-desc {
+    display: flex;
+    font-family: "Alan Sans", sans-serif;
+    font-size: 1.5em;
+    color: rgb(144, 144, 144);
+    text-align: left;
+    margin: 0em;
+    padding: 0px 5px;
+}
+
+.lesson-list, .lesson-titles {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+}
+
+.lesson-titles h2 {
+    text-align: left;
+}
+
+.section-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.section-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.user-pane {
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(210, 210, 210);
+    background: linear-gradient(to right, white 0%, rgb(240, 246, 243) 100%);
+    width: 300px;
+    margin-left: 5%;
+    padding: 15px;
+}
+
+/* -- Mobile Formatting -- */
+
+@media (max-width: 1024px) {
+
+    .section-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0em;
+    }
+
+    .lesson-button {
+    font-size: .8em;
+    flex-direction: column;
+    }
+
+    .lesson-list a {
+        margin: 0 5%;
+        max-width: 90%;
+    }
+
+    .lesson-titles h2 {
+        text-align: center;
+        margin: 5%;
+    }
+}
