@@ -68,6 +68,16 @@ td {
     text-align: center;
 }
 
+.score-avatar {
+    height: 250;
+    width: auto;
+}
+
+.score-title {
+    margin-top: 3%;
+}
+
+
 #subpage-1, #subpage-2 {
     display: flex;
     align-items: center;

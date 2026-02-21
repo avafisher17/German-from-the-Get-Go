@@ -70,5 +70,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     getOrSetUsername();
+
+    /* --- Color-Code Completed Lessons --- */
+
+    let completedLessons = JSON.parse(localStorage.getItem("completedLessons"));
+
+    if (!completedLessons) {
+        completedLessons = []
+        localStorage.setItem("completedLessons", JSON.stringify(completedLessons));
+    }
+    
+    const lessonButtons = document.querySelectorAll(".lesson-button");
+
+    lessonButtons.forEach(button => {
+        if (completedLessons.includes(button.dataset.lessonId)) {
+            button.style.backgroundColor = "rgb(252, 239, 216)";
+        }
+    });
+
+
         
 });

@@ -166,6 +166,15 @@ nav ul {
     background: linear-gradient(to right, white 0%, rgb(240, 246, 243) 100%); 
 }
 
+.rows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    gap: 1rem;
+}
+
 .unit-banner {
     display: flex;
     margin-left: 6%;

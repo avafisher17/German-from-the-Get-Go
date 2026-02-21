@@ -255,11 +255,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const nextQuestionButton = $("#next-q");
+    const scoreTitle = $(".score-title");
+    const scoreAvatar = $(".score-avatar")
+    const avatar = localStorage.getItem("myAvatar")
     const scoreReport = $("#score-report");
     const messageText = $("#message");
 
     const messageOptions = ["Wow! You make this look easy.", "Look at you! Learning all these new words.", "Keep at it! Practice makes perfect.",
         "Don't worry. Language learning takes practice. Keep at it, and you'll get good in no time!"]
+    
+    const avatarChoices = {"dog": "images/avatars/dog_soccer.png", "bear": "images/avatars/bear_soccer.png", "rabbit": "images/avatars/rabbit_soccer.png"}
+
+    const scoreTitleOptions = ["images/embellishments/ganz-toll.png", "images/embellishments/gut-gemacht.png", "images/embellishments/weiter-so.png"]
 
     nextQuestionButton.addEventListener("click", () => {
         if (correctRevealed) {
@@ -272,18 +279,33 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     gameFinished = true;
                     nextDisabled = false;
+
+                    scoreAvatar.src = avatarChoices[avatar];
+
                     if (score === 8) {
                         messageText.textContent = messageOptions[0];
+                        scoreTitle.src = scoreTitleOptions[0];
                     }
                     else if (score >= 5) {
                         messageText.textContent = messageOptions[1];
+                        scoreTitle.src = scoreTitleOptions[1];
                     }
                     else if (score >= 3) {
                         messageText.textContent = messageOptions[2];
+                        scoreTitle.src = scoreTitleOptions[2];
                     }
                     else {
                         messageText.textContent = messageOptions[3];
+                        scoreTitle.src = scoreTitleOptions[2];
                     }
+
+                    let completedLessons = JSON.parse(localStorage.getItem("completedLessons"));
+
+                    if (!completedLessons.includes("lesson1_1")) {
+                        completedLessons.push("lesson1_1");
+                    }
+
+                    localStorage.setItem("completedLessons", JSON.stringify(completedLessons));
                 }
                 else {
                     correctRevealed = false;
