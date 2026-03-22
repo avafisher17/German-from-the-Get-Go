@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     next.addEventListener("click", () => {
         if (!nextDisabled) {
             if (currentIndex === 4) {
-                window.location.href = "1_2.html";
+                window.location.href = "lessons.html";
             }
             else if (currentIndex === 3 && !gameFinished) {
                 nextDisabled = true;
